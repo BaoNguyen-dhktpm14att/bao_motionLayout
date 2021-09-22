@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+           <KeyPosition
+               motion:motionTarget="@+id/imageView4"
+               motion:framePosition="10"
+               motion:keyPositionType="deltaRelative" />
+           <KeyPosition
+               motion:motionTarget="@+id/imageView4"
+               motion:framePosition="30"
+               motion:keyPositionType="deltaRelative"
+               motion:percentX="4.409"
+               motion:percentY="0.427" />
+       </KeyFrameSet>
+        <OnClick />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_height="85dp"
+            android:layout_width="128dp"
+            android:id="@+id/imageView4"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="48dp" />
+        <Constraint
+            motion:layout_editor_absoluteY="333dp"
+            android:layout_height="53dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="200dp"
+            android:id="@+id/button3"
+            motion:layout_editor_absoluteX="211dp" />
+        <Constraint
+            motion:layout_editor_absoluteY="6dp"
+            android:layout_height="48dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="287dp"
+            android:id="@+id/button4" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_editor_absoluteX="141dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/button2"
+            android:layout_marginBottom="24dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_height="112dp"
+            android:layout_width="111dp"
+            android:id="@+id/imageView4"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="88dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="84dp"
+            android:layout_marginRight="84dp" />
+        <Constraint
+            motion:layout_editor_absoluteY="333dp"
+            android:layout_height="48dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="192dp"
+            android:id="@+id/button3"
+            motion:layout_editor_absoluteX="219dp" />
+        <Constraint
+            motion:layout_editor_absoluteY="13dp"
+            android:layout_height="41dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="299dp"
+            android:id="@+id/button4"
+            motion:layout_editor_absoluteX="112dp" />
+    </ConstraintSet>
+</MotionScene>
