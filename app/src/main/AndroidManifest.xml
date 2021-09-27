@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Dhktpm14att_motionlayout">
-        <activity android:name=".shopingMotionLayout"></activity>
+        <activity android:name=".musicMotionLayout"></activity>
+        <activity android:name=".shopingMotionLayout" />
         <activity android:name=".babyMotionLayout" />
         <activity android:name=".MainActivity4" />
         <activity android:name=".MainActivity3" />
